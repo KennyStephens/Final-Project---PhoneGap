@@ -21,11 +21,14 @@
       background-size: cover;
     }
 
-    .header-image h1,
-    .header-image h3 {
-      color: #fff;
-      font-weight: 400;
+    .header-text h1,
+    .header-text h3 {
+      font-weight: bold;
       text-shadow: none;
+    }
+
+    .header-text h3 {
+      font-weight: 400;
     }
 
     .center {
@@ -46,7 +49,7 @@
 
 <body>
   <!-- HOME PAGE -->
-  <div id="homeScreen" data-role="page">
+  <div id="homeScreen" data-role="page" data-theme="b">
     <div class="app">
       <div id="deviceready" class="blink">
         <p class="event listening">Connecting to Device</p>
@@ -55,8 +58,10 @@
       </div>
     </div>
     <div class="header-image">
-      <h1>Overwatch</h1>
-      <h3 style="color: orange;">Your Overwatch Guide</h3>
+      <div class="header-text" style="background: rgba(255,255,255, .5); text-align: center; padding: 20px 50px;">
+          <h1 style="color: black;">Overwatch</h1>
+          <h3 style="color: orange;">Your Overwatch Guide</h3>
+      </div>
     </div>
     <div data-role="content">
       <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
@@ -73,7 +78,7 @@
 
 
   <!-- OVERVIEW PAGE -->
-  <div id="overview" data-role="page">
+  <div id="overview" data-role="page" data-theme="b">
     <header data-role="header" data-position="fixed" data-id="appHeader">
       <h1>Overview</h1>
       <a href="#homeScreen"
@@ -112,7 +117,7 @@
   </div>
 
   <!-- CHARACTER PICKER PAGE -->
-  <div id="characterpicker" data-role="page">
+  <div id="characterpicker" data-role="page" data-theme="b">
     <header data-role="header" data-position="fixed" data-id="appHeader">
       <h1>Character Picker</h1>
       <a href="#homeScreen"
@@ -152,7 +157,7 @@
   </div>
 
   <!-- NEWSLETTER PAGE -->
-  <div id="newsletter" data-role="page">
+  <div id="newsletter" data-role="page" data-theme="b">
     <header data-role="header" data-position="fixed" data-id="appHeader">
       <h1>Newsletter</h1>
       <a href="#homeScreen"
